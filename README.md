@@ -6,7 +6,11 @@
 
 ## 先看演示
 
-下载任一 HTML 后用 Chrome 打开，可断网使用，不需要服务器、Python 或 API 密钥。仓库页面可能显示 HTML 源码，应先下载文件。
+**[在线展示首页](https://1463332164-ship-it.github.io/supply-chain-risk-analytics-public/)** · [基准分析](https://1463332164-ship-it.github.io/supply-chain-risk-analytics-public/base.html) · [固定 AI 草稿](https://1463332164-ship-it.github.io/supply-chain-risk-analytics-public/base_ai.html) · [组合压力](https://1463332164-ship-it.github.io/supply-chain-risk-analytics-public/combined.html)
+
+建议用两分钟看一个问题：打开基准页，筛选 SKU001 / WH1，查看短缺发生日与后续到货；再切换组合压力页比较风险变化，最后展开证据与 AI 草稿，区分计算事实、待核实原因和人工决策。
+
+下载任一 HTML 后用 Chrome 打开，可断网使用，不需要服务器、Python 或 API 密钥。仓库页面可能显示 HTML 源码，应先下载文件。单页可独立分析；如需离线跨页导航，请下载整个 `examples/showcase/` 目录，保持四个 HTML 的文件名和相对位置不变。
 
 | 页面 | 内容 | 证据条数 |
 |---|---|---:|
@@ -17,6 +21,10 @@
 筛选仓库、SKU 和风险范围后，点击库存行的“查看”，可交互查看逐日需求、到货、净余额和日期明细，展开原始 JSON，下载当前筛选对应的 CSV。证据与 AI 区域默认折叠，展开后保留完整原值、来源和解释。更多信息见 [演示说明](examples/showcase/README.md)。
 
 ## 业务分析与结果
+
+面向计划、采购及供应链分析岗位，项目把三个日常问题放到同一条可追溯流程中：优先核查哪些库存缺口、哪些延期订单需要跟进、补货建议基于什么数据。对工业工程与解决方案岗位，它展示了从业务口径、数据校验、规则计算到交互呈现和验收边界的实现过程；尚未测量真实业务中的效率或收益改善。
+
+实现分工：`scai/data.py` 校验并固定输入快照 → `scai/analysis.py` 计算预测与风险 → `scai/artifacts.py` 校验输入指纹与运行产物一致性 → `scai/dashboard.py` 输出离线看板；可选的 `scai/ai.py` 校验固定草稿，人工再通过 CLI 留存审核决定。
 
 流程包括：三表数据校验 → 三种需求预测基线与时间回测 → 逐日库存推演 → PO 延期、库存缺口及覆盖过高的证据台账 → 规则补货建议 → 可选 AI 草稿校验与独立人工审核。
 
@@ -79,7 +87,7 @@ node scripts/check_dashboard.mjs examples/showcase/combined.html
 
 Python 测试覆盖计算口径、数据异常、页面生成、输入输出保护及 AI 审核。JavaScript 脚本使用无外部依赖的 DOM 测试桩，检查筛选、日期、JSON、CSV 和展示契约；它不是 Chrome 排版、触屏或下载体验验收。
 
-2026-10-19 在 Windows / Python 3.12.10 的独立测试副本中实际核验；副本不含 Git 历史、个人审核记录或预先存在的运行结果。最终候选目录只保存项目文件，测试产物留在副本。
+以下为公开仓库准备阶段的历史核验记录（2026-10-19），不是每次提交自动刷新的状态。该阶段在 Windows / Python 3.12.10 的独立测试副本中实际核验；副本不含 Git 历史、个人审核记录或预先存在的运行结果。最终候选目录只保存项目文件，测试产物留在副本。
 
 | 验证 | 实际结果 |
 |---|---|
@@ -89,10 +97,14 @@ Python 测试覆盖计算口径、数据异常、页面生成、输入输出保�
 | 四情景与重复基准 | 脚本成功；四份完整 results.json 与既有基准逐字节一致，payload、manifest 和 AI 绑定一致 |
 | 三张 showcase 的 JavaScript 逻辑 | 每页 30 项，共 90 项通过；通过内置 Node 执行现有 DOM 测试脚本，不表示已验证本机终端 Node 安装 |
 | 两张历史基准 HTML 的 JavaScript 逻辑 | 每页 26 项，共 52 项通过，保持旧夹具兼容 |
-| Chrome 人工验收 | 三张页面此前已由使用者验收；本轮确认候选页面与已验收文件、当前生成器新输出均逐字节一致 |
-| 本轮浏览器自动化、Linux/macOS 实机、远程 CI、公开仓库干净克隆 | 未执行 |
+| Chrome 人工验收 | 三张页面此前已由使用者验收；该准备阶段确认导航加入前的候选分析页与已验收文件、生成器新输出逐字节一致 |
+| 该准备阶段的浏览器自动化、Linux/macOS 实机、远程 CI、公开仓库干净克隆 | 未执行 |
 
-[GitHub Actions 配置](.github/workflows/tests.yml) 提供 Ubuntu/Python 3.12 测试和生成、分析命令，未发现对私人材料的依赖；远程尚未运行，不能把本机隔离副本通过称为 CI 或公开克隆通过。
+最终收尾验收（2026-10-19，Windows / Python 3.12.10）：工作区新增 6 项展示来源与导航契约测试后，完整 Python 测试为 **142 项通过**；三个展示看板的 DOM 检查共 **90 项通过**。四个线上 HTML 均返回 HTTP 200，按 LF 口径与本地哈希一致；已在内置浏览器约 471 CSS 像素宽视口检查四页导航、主要交互和窄屏布局。公开远程提交 `682b58f` 的干净克隆通过原有 136 项测试及 generate → analyze → validate-ai 流程。详见 [最终验收记录](docs/FINAL_ACCEPTANCE.md)。
+
+已核验的远程状态（2026-10-19）：提交 `682b58f` 的 [reproducibility 测试](https://github.com/1463332164-ship-it/supply-chain-risk-analytics-public/actions/runs/39209139622) 与 [Pages 部署](https://github.com/1463332164-ship-it/supply-chain-risk-analytics-public/actions/runs/39209139383) 均成功。**上述远程证据只对应该提交，不覆盖尚未提交的文档与新增测试。** 新候选版本提交后仍需核对其自身的 CI、部署和线上页面。
+
+[回归测试工作流](.github/workflows/tests.yml) 配置 Ubuntu/Python 3.12 测试与生成、分析命令；远程运行结果请查看 [Actions](https://github.com/1463332164-ship-it/supply-chain-risk-analytics-public/actions)。本地测试、用户在线验收、远程测试 CI 和公开干净克隆是不同证据，不能互相替代。
 
 ## 安全与使用边界
 
@@ -104,7 +116,7 @@ Python 测试覆盖计算口径、数据异常、页面生成、输入输出保�
 
 ## 文件说明
 
-`scai/` 是程序，`scripts/` 是验证入口，`tests/` 是回归测试，`data/demo/` 是模拟输入。`examples/showcase/` 是当前主展示；其 metadata 仅记录展示来源与哈希，不能作为 CLI 的运行 manifest。
+`scai/` 是程序，`scripts/` 是验证入口，`tests/` 是回归测试，`data/demo/` 是模拟输入。`examples/showcase/` 是当前主展示；其 metadata 分别记录原始导出来源和当前展示页哈希；导航是导出后的展示层修改，不能作为 CLI 的运行 manifest。
 
 `examples/base/` 中保留的分析包与旧 AI 页面、`examples/stress/results.json`、`examples/verification.json` 是测试依赖的历史夹具。旧页面不是最新 UI；旧验证 JSON 中的测试数、环境、命令及浏览器状态不代表当前验收。stress 目录只保留结果基准，不是完整运行包。不要用新 HTML 单独替换旧包中被 manifest 哈希绑定的文件。
 

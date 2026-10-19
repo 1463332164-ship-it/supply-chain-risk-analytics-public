@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "artifact_type": "standalone_showcase_exports_not_a_run_bundle",
   "prepared_date": "2026-10-19",
   "input": {
@@ -91,5 +91,19 @@
     "prior_chrome_acceptance": "reported_by_user_for_stage5_preview_pages",
     "remote_ci_in_this_stage": false,
     "note": "Checksums are integrity references, not signatures, identity checks, or proof of business execution."
+  },
+  "original_export_git_commit": "ef60ca2976a3386796b3056c6a1312d7f1577322",
+  "hash_contract": {
+    "pages_html_sha256": "Original exported HTML bytes before showcase navigation, as stored at original_export_git_commit; not current published HTML.",
+    "published_file_sha256": "Current showcase UTF-8 HTML bytes with CRLF normalized to LF, matching .gitattributes publication rules; includes navigation and index.html. Not a remote deployment verification.",
+    "verification_scope": "Historical original-export preparation checks; byte_identical_to_stage5_preview applies only to those original exports.",
+    "generator_source_sha256": "Historical generator Git blob bytes at original_export_git_commit (LF text); not a claim that arbitrary future working-tree source is identical.",
+    "source_artifact_sha256": "pages.* file hashes refer to exact original run artifact bytes; packet_content_sha256 and response_content_sha256 follow the separate scai.ai canonical JSON contracts. Source run bundles are not distributed here."
+  },
+  "published_file_sha256": {
+    "index.html": "b76c17d5ffb2309cdb2dced85571632f9718306616eafc8dd642a7778614d468",
+    "base.html": "63850fe66f6978b807da8722d4fd3922bae254e314338860ef5fa97a3d3396f4",
+    "base_ai.html": "fbde477c72b336b5c0b686470ad18be8fd79fc10a237a2ea9370077512a0e693",
+    "combined.html": "802b3cb3703b93017cc323b9d073f984ab2833ca543c604060700b9d787f22b7"
   }
 }
