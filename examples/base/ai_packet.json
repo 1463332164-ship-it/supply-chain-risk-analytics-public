@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "data_origin": "synthetic",
+  "input_sha256": "d9f6fc2e0ad993d82a52f14e23ddb78aa9adfcc42d6a403425a2e5fc36149932",
+  "summary": {
+    "as_of": "2026-10-17",
+    "data_origin": "synthetic",
+    "demand_rows": 16200,
+    "series": 90,
+    "sku_count": 30,
+    "warehouse_count": 3,
+    "history_days": 180,
+    "selected_model": "seasonal7",
+    "demand_factor": 1,
+    "delay_days": 0,
+    "shortage_entities": 17,
+    "evidence_counts": {
+      "projected_shortage": 17,
+      "excess_coverage": 12,
+      "overdue_purchase_order": 90
+    },
+    "reorder_suggestion_units": 6241,
+    "reorder_cost_cny": 1125942.0,
+    "due_orders": 450,
+    "on_time_orders": 171,
+    "otd": 0.38
+  },
+  "evidence": [
+    {
+      "id": "INV-SKU001-WH1",
+      "type": "projected_shortage",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH1",
+      "source": "inventory.csv:2; demand.csv:SKU001/WH1; orders.csv:SKU001/WH1",
+      "metrics": {
+        "first_shortage_day": 3,
+        "peak_net_shortage_units": 70.0,
+        "reorder_suggestion_units": 116
+      },
+      "meaning": "预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。"
+    },
+    {
+      "id": "INV-SKU001-WH2",
+      "type": "projected_shortage",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH2",
+      "source": "inventory.csv:3; demand.csv:SKU001/WH2; orders.csv:SKU001/WH2",
+      "metrics": {
+        "first_shortage_day": 2,
+        "peak_net_shortage_units": 102.0,
+        "reorder_suggestion_units": 161
+      },
+      "meaning": "预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。"
+    },
+    {
+      "id": "INV-SKU001-WH3",
+      "type": "projected_shortage",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH3",
+      "source": "inventory.csv:4; demand.csv:SKU001/WH3; orders.csv:SKU001/WH3",
+      "metrics": {
+        "first_shortage_day": 3,
+        "peak_net_shortage_units": 122.0,
+        "reorder_suggestion_units": 192
+      },
+      "meaning": "预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。"
+    },
+    {
+      "id": "PO-001-1-4",
+      "type": "overdue_purchase_order",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH1",
+      "source": "orders.csv:6",
+      "metrics": {
+        "overdue_days": 9,
+        "open_units": 128
+      },
+      "meaning": "截至快照仍未全量收货且已超过承诺日期；原因未知。"
+    },
+    {
+      "id": "PO-001-2-4",
+      "type": "overdue_purchase_order",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH2",
+      "source": "orders.csv:12",
+      "metrics": {
+        "overdue_days": 9,
+        "open_units": 156
+      },
+      "meaning": "截至快照仍未全量收货且已超过承诺日期；原因未知。"
+    },
+    {
+      "id": "PO-001-3-4",
+      "type": "overdue_purchase_order",
+      "priority": "high",
+      "sku": "SKU001",
+      "warehouse": "WH3",
+      "source": "orders.csv:18",
+      "metrics": {
+        "overdue_days": 9,
+        "open_units": 181
+      },
+      "meaning": "截至快照仍未全量收货且已超过承诺日期；原因未知。"
+    },
+    {
+      "id": "EXCESS-SKU007-WH1",
+      "type": "excess_coverage",
+      "priority": "medium",
+      "sku": "SKU007",
+      "warehouse": "WH1",
+      "source": "inventory.csv:20",
+      "metrics": {
+        "coverage_days": 65.4961
+      },
+      "meaning": "超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。"
+    },
+    {
+      "id": "EXCESS-SKU007-WH2",
+      "type": "excess_coverage",
+      "priority": "medium",
+      "sku": "SKU007",
+      "warehouse": "WH2",
+      "source": "inventory.csv:21",
+      "metrics": {
+        "coverage_days": 62.5743
+      },
+      "meaning": "超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。"
+    },
+    {
+      "id": "EXCESS-SKU007-WH3",
+      "type": "excess_coverage",
+      "priority": "medium",
+      "sku": "SKU007",
+      "warehouse": "WH3",
+      "source": "inventory.csv:22",
+      "metrics": {
+        "coverage_days": 67.4258
+      },
+      "meaning": "超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。"
+    }
+  ],
+  "packet_sha256": "cb9051d79ae8b9e47baa5011dc3c5b28575f152749cd9e03e7e87d0c8fa26d99"
+}

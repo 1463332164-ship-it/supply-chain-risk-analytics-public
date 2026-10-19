@@ -1,0 +1,225 @@
+{
+  "verified_at_utc": "2026-10-18T00:50:25.327850+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "all_commands_passed": true,
+  "repeat_results_identical": true,
+  "scenarios": {
+    "base": {
+      "as_of": "2026-10-17",
+      "data_origin": "synthetic",
+      "demand_rows": 16200,
+      "series": 90,
+      "sku_count": 30,
+      "warehouse_count": 3,
+      "history_days": 180,
+      "selected_model": "seasonal7",
+      "demand_factor": 1,
+      "delay_days": 0,
+      "shortage_entities": 17,
+      "evidence_counts": {
+        "projected_shortage": 17,
+        "excess_coverage": 12,
+        "overdue_purchase_order": 90
+      },
+      "reorder_suggestion_units": 6241,
+      "reorder_cost_cny": 1125942.0,
+      "due_orders": 450,
+      "on_time_orders": 171,
+      "otd": 0.38
+    },
+    "stress": {
+      "as_of": "2026-10-17",
+      "data_origin": "synthetic",
+      "demand_rows": 16200,
+      "series": 90,
+      "sku_count": 30,
+      "warehouse_count": 3,
+      "history_days": 180,
+      "selected_model": "seasonal7",
+      "demand_factor": 1.25,
+      "delay_days": 7,
+      "shortage_entities": 69,
+      "evidence_counts": {
+        "projected_shortage": 69,
+        "excess_coverage": 12,
+        "overdue_purchase_order": 90
+      },
+      "reorder_suggestion_units": 26612,
+      "reorder_cost_cny": 4382459.0,
+      "due_orders": 450,
+      "on_time_orders": 171,
+      "otd": 0.38
+    },
+    "demand_only": {
+      "as_of": "2026-10-17",
+      "data_origin": "synthetic",
+      "demand_rows": 16200,
+      "series": 90,
+      "sku_count": 30,
+      "warehouse_count": 3,
+      "history_days": 180,
+      "selected_model": "seasonal7",
+      "demand_factor": 1.25,
+      "delay_days": 0,
+      "shortage_entities": 29,
+      "evidence_counts": {
+        "projected_shortage": 29,
+        "excess_coverage": 12,
+        "overdue_purchase_order": 90
+      },
+      "reorder_suggestion_units": 10874,
+      "reorder_cost_cny": 1890897.0,
+      "due_orders": 450,
+      "on_time_orders": 171,
+      "otd": 0.38
+    },
+    "delay_only": {
+      "as_of": "2026-10-17",
+      "data_origin": "synthetic",
+      "demand_rows": 16200,
+      "series": 90,
+      "sku_count": 30,
+      "warehouse_count": 3,
+      "history_days": 180,
+      "selected_model": "seasonal7",
+      "demand_factor": 1,
+      "delay_days": 7,
+      "shortage_entities": 42,
+      "evidence_counts": {
+        "projected_shortage": 42,
+        "excess_coverage": 12,
+        "overdue_purchase_order": 90
+      },
+      "reorder_suggestion_units": 13060,
+      "reorder_cost_cny": 2211612.0,
+      "due_orders": 450,
+      "on_time_orders": 171,
+      "otd": 0.38
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_due_cohort_includes_unreceived (test_core.MathTests.test_due_cohort_includes_unreceived) ... ok\ntest_hand_calculation (test_core.MathTests.test_hand_calculation) ... ok\ntest_late_arrival_cannot_hide_early_shortage (test_core.MathTests.test_late_arrival_cannot_hide_early_shortage) ... ok\ntest_no_future_leakage (test_core.MathTests.test_no_future_leakage) ... ok\ntest_non_finite_numbers (test_core.MathTests.test_non_finite_numbers) ... ok\ntest_seasonal_repeats_last_week (test_core.MathTests.test_seasonal_repeats_last_week) ... ok\ntest_stale_eta_not_available (test_core.MathTests.test_stale_eta_not_available) ... ok\ntest_zero_demand_is_undefined (test_core.MathTests.test_zero_demand_is_undefined) ... ok\ntest_ai_changed_packet_rejected (test_core.PipelineTests.test_ai_changed_packet_rejected) ... ok\ntest_ai_fabricated_number_rejected (test_core.PipelineTests.test_ai_fabricated_number_rejected) ... ok\ntest_ai_text_number_rejected (test_core.PipelineTests.test_ai_text_number_rejected) ... ok\ntest_ai_unknown_reference_rejected (test_core.PipelineTests.test_ai_unknown_reference_rejected) ... ok\ntest_ai_valid_reference (test_core.PipelineTests.test_ai_valid_reference) ... ok\ntest_duplicate_and_missing_day_rejected (test_core.PipelineTests.test_duplicate_and_missing_day_rejected) ... ok\ntest_expected_scope (test_core.PipelineTests.test_expected_scope) ... ok\ntest_invalid_foreign_key_rejected (test_core.PipelineTests.test_invalid_foreign_key_rejected) ... ok\ntest_invalid_scenario_exit_code (test_core.PipelineTests.test_invalid_scenario_exit_code) ... ERROR: scenario out of allowed range\nok\ntest_result_reproducibility (test_core.PipelineTests.test_result_reproducibility) ... ok\ntest_review_requires_identity_and_reason (test_core.PipelineTests.test_review_requires_identity_and_reason) ... ok\ntest_scenario_changes_risk (test_core.PipelineTests.test_scenario_changes_risk) ... ok\ntest_seed_reproducibility (test_core.PipelineTests.test_seed_reproducibility) ... ok\ntest_tampered_packet_rejected (test_core.PipelineTests.test_tampered_packet_rejected) ... ok\ntest_test_period_cannot_select_model (test_core.PipelineTests.test_test_period_cannot_select_model) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 2.033s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "analyze",
+        "--out",
+        "runs/verify/base"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"as_of\": \"2026-10-17\",\n  \"data_origin\": \"synthetic\",\n  \"demand_rows\": 16200,\n  \"series\": 90,\n  \"sku_count\": 30,\n  \"warehouse_count\": 3,\n  \"history_days\": 180,\n  \"selected_model\": \"seasonal7\",\n  \"demand_factor\": 1,\n  \"delay_days\": 0,\n  \"shortage_entities\": 17,\n  \"evidence_counts\": {\n    \"projected_shortage\": 17,\n    \"excess_coverage\": 12,\n    \"overdue_purchase_order\": 90\n  },\n  \"reorder_suggestion_units\": 6241,\n  \"reorder_cost_cny\": 1125942.0,\n  \"due_orders\": 450,\n  \"on_time_orders\": 171,\n  \"otd\": 0.38\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "analyze",
+        "--out",
+        "runs/verify/repeat"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"as_of\": \"2026-10-17\",\n  \"data_origin\": \"synthetic\",\n  \"demand_rows\": 16200,\n  \"series\": 90,\n  \"sku_count\": 30,\n  \"warehouse_count\": 3,\n  \"history_days\": 180,\n  \"selected_model\": \"seasonal7\",\n  \"demand_factor\": 1,\n  \"delay_days\": 0,\n  \"shortage_entities\": 17,\n  \"evidence_counts\": {\n    \"projected_shortage\": 17,\n    \"excess_coverage\": 12,\n    \"overdue_purchase_order\": 90\n  },\n  \"reorder_suggestion_units\": 6241,\n  \"reorder_cost_cny\": 1125942.0,\n  \"due_orders\": 450,\n  \"on_time_orders\": 171,\n  \"otd\": 0.38\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "analyze",
+        "--out",
+        "runs/verify/stress",
+        "--demand-factor",
+        "1.25",
+        "--delay-days",
+        "7"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"as_of\": \"2026-10-17\",\n  \"data_origin\": \"synthetic\",\n  \"demand_rows\": 16200,\n  \"series\": 90,\n  \"sku_count\": 30,\n  \"warehouse_count\": 3,\n  \"history_days\": 180,\n  \"selected_model\": \"seasonal7\",\n  \"demand_factor\": 1.25,\n  \"delay_days\": 7,\n  \"shortage_entities\": 69,\n  \"evidence_counts\": {\n    \"projected_shortage\": 69,\n    \"excess_coverage\": 12,\n    \"overdue_purchase_order\": 90\n  },\n  \"reorder_suggestion_units\": 26612,\n  \"reorder_cost_cny\": 4382459.0,\n  \"due_orders\": 450,\n  \"on_time_orders\": 171,\n  \"otd\": 0.38\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "analyze",
+        "--out",
+        "runs/verify/demand_only",
+        "--demand-factor",
+        "1.25"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"as_of\": \"2026-10-17\",\n  \"data_origin\": \"synthetic\",\n  \"demand_rows\": 16200,\n  \"series\": 90,\n  \"sku_count\": 30,\n  \"warehouse_count\": 3,\n  \"history_days\": 180,\n  \"selected_model\": \"seasonal7\",\n  \"demand_factor\": 1.25,\n  \"delay_days\": 0,\n  \"shortage_entities\": 29,\n  \"evidence_counts\": {\n    \"projected_shortage\": 29,\n    \"excess_coverage\": 12,\n    \"overdue_purchase_order\": 90\n  },\n  \"reorder_suggestion_units\": 10874,\n  \"reorder_cost_cny\": 1890897.0,\n  \"due_orders\": 450,\n  \"on_time_orders\": 171,\n  \"otd\": 0.38\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "analyze",
+        "--out",
+        "runs/verify/delay_only",
+        "--delay-days",
+        "7"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"as_of\": \"2026-10-17\",\n  \"data_origin\": \"synthetic\",\n  \"demand_rows\": 16200,\n  \"series\": 90,\n  \"sku_count\": 30,\n  \"warehouse_count\": 3,\n  \"history_days\": 180,\n  \"selected_model\": \"seasonal7\",\n  \"demand_factor\": 1,\n  \"delay_days\": 7,\n  \"shortage_entities\": 42,\n  \"evidence_counts\": {\n    \"projected_shortage\": 42,\n    \"excess_coverage\": 12,\n    \"overdue_purchase_order\": 90\n  },\n  \"reorder_suggestion_units\": 13060,\n  \"reorder_cost_cny\": 2211612.0,\n  \"due_orders\": 450,\n  \"on_time_orders\": 171,\n  \"otd\": 0.38\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "validate-ai",
+        "--run",
+        "runs/verify/base",
+        "--response",
+        "examples/ai_response_codex.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"structural_checks_passed_human_review_pending\", \"checked_items\": 4, \"limitations\": \"\\u5f15\\u7528/\\u6570\\u503c/\\u7ed3\\u6784\\u68c0\\u67e5\\u901a\\u8fc7\\u4e0d\\u7b49\\u4e8e\\u89e3\\u91ca\\u6b63\\u786e\\uff0c\\u4e5f\\u4e0d\\u7b49\\u4e8e\\u7528\\u6237\\u5df2\\u638c\\u63e1\\u6216\\u5ba1\\u6838\\u3002\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scai",
+        "review",
+        "--run",
+        "runs/verify/base",
+        "--response",
+        "examples/ai_response_codex.json",
+        "--decisions",
+        "runs/verify/base/review_template.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"approved_count\": 0, \"review_saved\": true}\n",
+      "stderr": ""
+    }
+  ],
+  "human_review": "pending; only pending template was processed",
+  "github_actions": "configuration only; not remotely executed",
+  "browser_visual": "not_verified; browser processes could not start in execution environment"
+}

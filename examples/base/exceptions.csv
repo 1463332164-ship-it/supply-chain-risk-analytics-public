@@ -1,0 +1,120 @@
+﻿id,type,priority,sku,warehouse,source,metrics,meaning
+INV-SKU001-WH1,projected_shortage,high,SKU001,WH1,inventory.csv:2; demand.csv:SKU001/WH1; orders.csv:SKU001/WH1,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 70.0, ""reorder_suggestion_units"": 116}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU001-WH2,projected_shortage,high,SKU001,WH2,inventory.csv:3; demand.csv:SKU001/WH2; orders.csv:SKU001/WH2,"{""first_shortage_day"": 2, ""peak_net_shortage_units"": 102.0, ""reorder_suggestion_units"": 161}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU001-WH3,projected_shortage,high,SKU001,WH3,inventory.csv:4; demand.csv:SKU001/WH3; orders.csv:SKU001/WH3,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 122.0, ""reorder_suggestion_units"": 192}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+EXCESS-SKU007-WH1,excess_coverage,medium,SKU007,WH1,inventory.csv:20,"{""coverage_days"": 65.4961}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU007-WH2,excess_coverage,medium,SKU007,WH2,inventory.csv:21,"{""coverage_days"": 62.5743}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU007-WH3,excess_coverage,medium,SKU007,WH3,inventory.csv:22,"{""coverage_days"": 67.4258}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+INV-SKU008-WH1,projected_shortage,high,SKU008,WH1,inventory.csv:23; demand.csv:SKU008/WH1; orders.csv:SKU008/WH1,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 175.0, ""reorder_suggestion_units"": 130}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU008-WH2,projected_shortage,high,SKU008,WH2,inventory.csv:24; demand.csv:SKU008/WH2; orders.csv:SKU008/WH2,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 225.0, ""reorder_suggestion_units"": 155}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU008-WH3,projected_shortage,high,SKU008,WH3,inventory.csv:25; demand.csv:SKU008/WH3; orders.csv:SKU008/WH3,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 246.0, ""reorder_suggestion_units"": 170}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+EXCESS-SKU014-WH1,excess_coverage,medium,SKU014,WH1,inventory.csv:41,"{""coverage_days"": 63.5702}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU014-WH2,excess_coverage,medium,SKU014,WH2,inventory.csv:42,"{""coverage_days"": 66.1593}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU014-WH3,excess_coverage,medium,SKU014,WH3,inventory.csv:43,"{""coverage_days"": 63.7838}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+INV-SKU015-WH1,projected_shortage,high,SKU015,WH1,inventory.csv:44; demand.csv:SKU015/WH1; orders.csv:SKU015/WH1,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 332.0, ""reorder_suggestion_units"": 415}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU015-WH2,projected_shortage,high,SKU015,WH2,inventory.csv:45; demand.csv:SKU015/WH2; orders.csv:SKU015/WH2,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 349.0, ""reorder_suggestion_units"": 414}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU015-WH3,projected_shortage,high,SKU015,WH3,inventory.csv:46; demand.csv:SKU015/WH3; orders.csv:SKU015/WH3,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 367.0, ""reorder_suggestion_units"": 441}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+EXCESS-SKU021-WH1,excess_coverage,medium,SKU021,WH1,inventory.csv:62,"{""coverage_days"": 64.9784}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU021-WH2,excess_coverage,medium,SKU021,WH2,inventory.csv:63,"{""coverage_days"": 65.9971}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU021-WH3,excess_coverage,medium,SKU021,WH3,inventory.csv:64,"{""coverage_days"": 65.2175}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+INV-SKU022-WH1,projected_shortage,high,SKU022,WH1,inventory.csv:65; demand.csv:SKU022/WH1; orders.csv:SKU022/WH1,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 404.0, ""reorder_suggestion_units"": 523}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU022-WH2,projected_shortage,high,SKU022,WH2,inventory.csv:66; demand.csv:SKU022/WH2; orders.csv:SKU022/WH2,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 475.0, ""reorder_suggestion_units"": 609}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU022-WH3,projected_shortage,high,SKU022,WH3,inventory.csv:67; demand.csv:SKU022/WH3; orders.csv:SKU022/WH3,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 442.0, ""reorder_suggestion_units"": 574}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU023-WH3,projected_shortage,high,SKU023,WH3,inventory.csv:70; demand.csv:SKU023/WH3; orders.csv:SKU023/WH3,"{""first_shortage_day"": 21, ""peak_net_shortage_units"": 18.0, ""reorder_suggestion_units"": 154}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+EXCESS-SKU028-WH1,excess_coverage,medium,SKU028,WH1,inventory.csv:83,"{""coverage_days"": 70.3289}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU028-WH2,excess_coverage,medium,SKU028,WH2,inventory.csv:84,"{""coverage_days"": 63.5612}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+EXCESS-SKU028-WH3,excess_coverage,medium,SKU028,WH3,inventory.csv:85,"{""coverage_days"": 62.9043}",超过固定45日教学阈值；未考虑季节备货、MOQ及产品生命周期，不能直接判定呆滞。
+INV-SKU029-WH1,projected_shortage,high,SKU029,WH1,inventory.csv:86; demand.csv:SKU029/WH1; orders.csv:SKU029/WH1,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 522.0, ""reorder_suggestion_units"": 557}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU029-WH2,projected_shortage,high,SKU029,WH2,inventory.csv:87; demand.csv:SKU029/WH2; orders.csv:SKU029/WH2,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 526.0, ""reorder_suggestion_units"": 544}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU029-WH3,projected_shortage,high,SKU029,WH3,inventory.csv:88; demand.csv:SKU029/WH3; orders.csv:SKU029/WH3,"{""first_shortage_day"": 3, ""peak_net_shortage_units"": 673.0, ""reorder_suggestion_units"": 670}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+INV-SKU030-WH3,projected_shortage,high,SKU030,WH3,inventory.csv:91; demand.csv:SKU030/WH3; orders.csv:SKU030/WH3,"{""first_shortage_day"": 11, ""peak_net_shortage_units"": 195.0, ""reorder_suggestion_units"": 255}",预测下的净缺口，非已发生缺货；补货建议可能来不及弥补前段缺口，需要人工核查调拨/催交。
+PO-001-1-4,overdue_purchase_order,high,SKU001,WH1,orders.csv:6,"{""overdue_days"": 9, ""open_units"": 128}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-001-2-4,overdue_purchase_order,high,SKU001,WH2,orders.csv:12,"{""overdue_days"": 9, ""open_units"": 156}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-001-3-4,overdue_purchase_order,high,SKU001,WH3,orders.csv:18,"{""overdue_days"": 9, ""open_units"": 181}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-002-1-4,overdue_purchase_order,high,SKU002,WH1,orders.csv:24,"{""overdue_days"": 9, ""open_units"": 142}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-002-2-4,overdue_purchase_order,high,SKU002,WH2,orders.csv:30,"{""overdue_days"": 9, ""open_units"": 171}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-002-3-4,overdue_purchase_order,high,SKU002,WH3,orders.csv:36,"{""overdue_days"": 9, ""open_units"": 198}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-003-1-4,overdue_purchase_order,high,SKU003,WH1,orders.csv:42,"{""overdue_days"": 9, ""open_units"": 156}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-003-2-4,overdue_purchase_order,high,SKU003,WH2,orders.csv:48,"{""overdue_days"": 9, ""open_units"": 187}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-003-3-4,overdue_purchase_order,high,SKU003,WH3,orders.csv:54,"{""overdue_days"": 9, ""open_units"": 212}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-004-1-4,overdue_purchase_order,high,SKU004,WH1,orders.csv:60,"{""overdue_days"": 9, ""open_units"": 178}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-004-2-4,overdue_purchase_order,high,SKU004,WH2,orders.csv:66,"{""overdue_days"": 9, ""open_units"": 203}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-004-3-4,overdue_purchase_order,high,SKU004,WH3,orders.csv:72,"{""overdue_days"": 9, ""open_units"": 230}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-005-1-4,overdue_purchase_order,high,SKU005,WH1,orders.csv:78,"{""overdue_days"": 9, ""open_units"": 120}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-005-2-4,overdue_purchase_order,high,SKU005,WH2,orders.csv:84,"{""overdue_days"": 9, ""open_units"": 142}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-005-3-4,overdue_purchase_order,high,SKU005,WH3,orders.csv:90,"{""overdue_days"": 9, ""open_units"": 161}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-006-1-4,overdue_purchase_order,high,SKU006,WH1,orders.csv:96,"{""overdue_days"": 9, ""open_units"": 135}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-006-2-4,overdue_purchase_order,high,SKU006,WH2,orders.csv:102,"{""overdue_days"": 9, ""open_units"": 153}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-006-3-4,overdue_purchase_order,high,SKU006,WH3,orders.csv:108,"{""overdue_days"": 9, ""open_units"": 172}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-007-1-4,overdue_purchase_order,high,SKU007,WH1,orders.csv:114,"{""overdue_days"": 9, ""open_units"": 149}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-007-2-4,overdue_purchase_order,high,SKU007,WH2,orders.csv:120,"{""overdue_days"": 9, ""open_units"": 163}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-007-3-4,overdue_purchase_order,high,SKU007,WH3,orders.csv:126,"{""overdue_days"": 9, ""open_units"": 184}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-008-1-4,overdue_purchase_order,high,SKU008,WH1,orders.csv:132,"{""overdue_days"": 9, ""open_units"": 164}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-008-2-4,overdue_purchase_order,high,SKU008,WH2,orders.csv:138,"{""overdue_days"": 9, ""open_units"": 174}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-008-3-4,overdue_purchase_order,high,SKU008,WH3,orders.csv:144,"{""overdue_days"": 9, ""open_units"": 191}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-009-1-4,overdue_purchase_order,high,SKU009,WH1,orders.csv:150,"{""overdue_days"": 9, ""open_units"": 169}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-009-2-4,overdue_purchase_order,high,SKU009,WH2,orders.csv:156,"{""overdue_days"": 9, ""open_units"": 187}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-009-3-4,overdue_purchase_order,high,SKU009,WH3,orders.csv:162,"{""overdue_days"": 9, ""open_units"": 200}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-010-1-4,overdue_purchase_order,high,SKU010,WH1,orders.csv:168,"{""overdue_days"": 9, ""open_units"": 177}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-010-2-4,overdue_purchase_order,high,SKU010,WH2,orders.csv:174,"{""overdue_days"": 9, ""open_units"": 192}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-010-3-4,overdue_purchase_order,high,SKU010,WH3,orders.csv:180,"{""overdue_days"": 9, ""open_units"": 208}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-011-1-4,overdue_purchase_order,high,SKU011,WH1,orders.csv:186,"{""overdue_days"": 9, ""open_units"": 189}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-011-2-4,overdue_purchase_order,high,SKU011,WH2,orders.csv:192,"{""overdue_days"": 9, ""open_units"": 206}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-011-3-4,overdue_purchase_order,high,SKU011,WH3,orders.csv:198,"{""overdue_days"": 9, ""open_units"": 217}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-012-1-4,overdue_purchase_order,high,SKU012,WH1,orders.csv:204,"{""overdue_days"": 9, ""open_units"": 193}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-012-2-4,overdue_purchase_order,high,SKU012,WH2,orders.csv:210,"{""overdue_days"": 9, ""open_units"": 211}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-012-3-4,overdue_purchase_order,high,SKU012,WH3,orders.csv:216,"{""overdue_days"": 9, ""open_units"": 236}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-013-1-4,overdue_purchase_order,high,SKU013,WH1,orders.csv:222,"{""overdue_days"": 9, ""open_units"": 213}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-013-2-4,overdue_purchase_order,high,SKU013,WH2,orders.csv:228,"{""overdue_days"": 9, ""open_units"": 238}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-013-3-4,overdue_purchase_order,high,SKU013,WH3,orders.csv:234,"{""overdue_days"": 9, ""open_units"": 246}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-014-1-4,overdue_purchase_order,high,SKU014,WH1,orders.csv:240,"{""overdue_days"": 9, ""open_units"": 226}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-014-2-4,overdue_purchase_order,high,SKU014,WH2,orders.csv:246,"{""overdue_days"": 9, ""open_units"": 230}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-014-3-4,overdue_purchase_order,high,SKU014,WH3,orders.csv:252,"{""overdue_days"": 9, ""open_units"": 261}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-015-1-4,overdue_purchase_order,high,SKU015,WH1,orders.csv:258,"{""overdue_days"": 9, ""open_units"": 230}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-015-2-4,overdue_purchase_order,high,SKU015,WH2,orders.csv:264,"{""overdue_days"": 9, ""open_units"": 251}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-015-3-4,overdue_purchase_order,high,SKU015,WH3,orders.csv:270,"{""overdue_days"": 9, ""open_units"": 265}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-016-1-4,overdue_purchase_order,high,SKU016,WH1,orders.csv:276,"{""overdue_days"": 9, ""open_units"": 250}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-016-2-4,overdue_purchase_order,high,SKU016,WH2,orders.csv:282,"{""overdue_days"": 9, ""open_units"": 259}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-016-3-4,overdue_purchase_order,high,SKU016,WH3,orders.csv:288,"{""overdue_days"": 9, ""open_units"": 273}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-017-1-4,overdue_purchase_order,high,SKU017,WH1,orders.csv:294,"{""overdue_days"": 9, ""open_units"": 249}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-017-2-4,overdue_purchase_order,high,SKU017,WH2,orders.csv:300,"{""overdue_days"": 9, ""open_units"": 278}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-017-3-4,overdue_purchase_order,high,SKU017,WH3,orders.csv:306,"{""overdue_days"": 9, ""open_units"": 293}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-018-1-4,overdue_purchase_order,high,SKU018,WH1,orders.csv:312,"{""overdue_days"": 9, ""open_units"": 268}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-018-2-4,overdue_purchase_order,high,SKU018,WH2,orders.csv:318,"{""overdue_days"": 9, ""open_units"": 287}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-018-3-4,overdue_purchase_order,high,SKU018,WH3,orders.csv:324,"{""overdue_days"": 9, ""open_units"": 300}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-019-1-4,overdue_purchase_order,high,SKU019,WH1,orders.csv:330,"{""overdue_days"": 9, ""open_units"": 261}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-019-2-4,overdue_purchase_order,high,SKU019,WH2,orders.csv:336,"{""overdue_days"": 9, ""open_units"": 288}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-019-3-4,overdue_purchase_order,high,SKU019,WH3,orders.csv:342,"{""overdue_days"": 9, ""open_units"": 314}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-020-1-4,overdue_purchase_order,high,SKU020,WH1,orders.csv:348,"{""overdue_days"": 9, ""open_units"": 274}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-020-2-4,overdue_purchase_order,high,SKU020,WH2,orders.csv:354,"{""overdue_days"": 9, ""open_units"": 305}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-020-3-4,overdue_purchase_order,high,SKU020,WH3,orders.csv:360,"{""overdue_days"": 9, ""open_units"": 311}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-021-1-4,overdue_purchase_order,high,SKU021,WH1,orders.csv:366,"{""overdue_days"": 9, ""open_units"": 292}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-021-2-4,overdue_purchase_order,high,SKU021,WH2,orders.csv:372,"{""overdue_days"": 9, ""open_units"": 299}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-021-3-4,overdue_purchase_order,high,SKU021,WH3,orders.csv:378,"{""overdue_days"": 9, ""open_units"": 338}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-022-1-4,overdue_purchase_order,high,SKU022,WH1,orders.csv:384,"{""overdue_days"": 9, ""open_units"": 307}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-022-2-4,overdue_purchase_order,high,SKU022,WH2,orders.csv:390,"{""overdue_days"": 9, ""open_units"": 334}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-022-3-4,overdue_purchase_order,high,SKU022,WH3,orders.csv:396,"{""overdue_days"": 9, ""open_units"": 348}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-023-1-4,overdue_purchase_order,high,SKU023,WH1,orders.csv:402,"{""overdue_days"": 9, ""open_units"": 309}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-023-2-4,overdue_purchase_order,high,SKU023,WH2,orders.csv:408,"{""overdue_days"": 9, ""open_units"": 327}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-023-3-4,overdue_purchase_order,high,SKU023,WH3,orders.csv:414,"{""overdue_days"": 9, ""open_units"": 356}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-024-1-4,overdue_purchase_order,high,SKU024,WH1,orders.csv:420,"{""overdue_days"": 9, ""open_units"": 319}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-024-2-4,overdue_purchase_order,high,SKU024,WH2,orders.csv:426,"{""overdue_days"": 9, ""open_units"": 336}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-024-3-4,overdue_purchase_order,high,SKU024,WH3,orders.csv:432,"{""overdue_days"": 9, ""open_units"": 361}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-025-1-4,overdue_purchase_order,high,SKU025,WH1,orders.csv:438,"{""overdue_days"": 9, ""open_units"": 335}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-025-2-4,overdue_purchase_order,high,SKU025,WH2,orders.csv:444,"{""overdue_days"": 9, ""open_units"": 368}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-025-3-4,overdue_purchase_order,high,SKU025,WH3,orders.csv:450,"{""overdue_days"": 9, ""open_units"": 374}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-026-1-4,overdue_purchase_order,high,SKU026,WH1,orders.csv:456,"{""overdue_days"": 9, ""open_units"": 347}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-026-2-4,overdue_purchase_order,high,SKU026,WH2,orders.csv:462,"{""overdue_days"": 9, ""open_units"": 377}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-026-3-4,overdue_purchase_order,high,SKU026,WH3,orders.csv:468,"{""overdue_days"": 9, ""open_units"": 383}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-027-1-4,overdue_purchase_order,high,SKU027,WH1,orders.csv:474,"{""overdue_days"": 9, ""open_units"": 365}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-027-2-4,overdue_purchase_order,high,SKU027,WH2,orders.csv:480,"{""overdue_days"": 9, ""open_units"": 377}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-027-3-4,overdue_purchase_order,high,SKU027,WH3,orders.csv:486,"{""overdue_days"": 9, ""open_units"": 386}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-028-1-4,overdue_purchase_order,high,SKU028,WH1,orders.csv:492,"{""overdue_days"": 9, ""open_units"": 363}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-028-2-4,overdue_purchase_order,high,SKU028,WH2,orders.csv:498,"{""overdue_days"": 9, ""open_units"": 390}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-028-3-4,overdue_purchase_order,high,SKU028,WH3,orders.csv:504,"{""overdue_days"": 9, ""open_units"": 404}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-029-1-4,overdue_purchase_order,high,SKU029,WH1,orders.csv:510,"{""overdue_days"": 9, ""open_units"": 379}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-029-2-4,overdue_purchase_order,high,SKU029,WH2,orders.csv:516,"{""overdue_days"": 9, ""open_units"": 406}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-029-3-4,overdue_purchase_order,high,SKU029,WH3,orders.csv:522,"{""overdue_days"": 9, ""open_units"": 417}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-030-1-4,overdue_purchase_order,high,SKU030,WH1,orders.csv:528,"{""overdue_days"": 9, ""open_units"": 80}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-030-2-4,overdue_purchase_order,high,SKU030,WH2,orders.csv:534,"{""overdue_days"": 9, ""open_units"": 73}",截至快照仍未全量收货且已超过承诺日期；原因未知。
+PO-030-3-4,overdue_purchase_order,high,SKU030,WH3,orders.csv:540,"{""overdue_days"": 9, ""open_units"": 58}",截至快照仍未全量收货且已超过承诺日期；原因未知。

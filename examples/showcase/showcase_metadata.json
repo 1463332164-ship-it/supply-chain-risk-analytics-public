@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "artifact_type": "standalone_showcase_exports_not_a_run_bundle",
+  "prepared_date": "2026-10-19",
+  "input": {
+    "directory": "data/demo",
+    "origin": "synthetic",
+    "input_sha256": "d9f6fc2e0ad993d82a52f14e23ddb78aa9adfcc42d6a403425a2e5fc36149932",
+    "fingerprint_contract": "sorted table names demand/inventory/orders + exact corresponding CSV bytes; provenance.json is not included",
+    "file_sha256": {
+      "data/demo/demand.csv": "8bf82126b6a522787310fecf038eec73ee435fb5c57664fcc126d8b52045c322",
+      "data/demo/inventory.csv": "6a304bb05854c8e8e9e02a5e5ea737029e84c99cd4f122a049a23b5cf7d57c6f",
+      "data/demo/orders.csv": "6df36aae5c28473930f85542befb468ba14310e5bc79e539a77596d4a1cbc57d",
+      "data/demo/provenance.json": "e21e6fc0f985938188d8c5f4c09b038958a7c01f3eea21457ba47bb4b26420fe"
+    }
+  },
+  "generator_source_sha256": {
+    "scai/__init__.py": "077696f760514cf366c3970886c64fe6d15e9e1220c812b6456bf6469431a3e6",
+    "scai/__main__.py": "5c9e5a427cfdf94c9c9cba1830a8b0af2938d58b4cf4265d257768af67d97492",
+    "scai/ai.py": "82519811db0cf051b242111ef41327df00ddf7d9ecd9380293e367035dec99b6",
+    "scai/analysis.py": "e0271f48fcc347da897d00d103a8fdb6b962cf92f1c42ab2185d3b75e09dc18b",
+    "scai/artifacts.py": "6ac5d890d52854516223a9d2b64348cae555737ba23f6b0b8790be87f5358600",
+    "scai/dashboard.py": "ddbd1b177d739627465ee9d1170f9af12d7d8f69341f09fa6243da40e778141d",
+    "scai/data.py": "22ff41cc696dbb90ed029fd218d93abb35ac16ac38bb56fb46916dbb3802869f",
+    "scai/output.py": "2ad7d5f4764056b1fff19d9f209505cc2b7b1a681b88a9a043a08646ad590530"
+  },
+  "pages": {
+    "base.html": {
+      "scenario": "base",
+      "parameters": {
+        "demand_factor": 1,
+        "delay_days": 0
+      },
+      "html_sha256": "35d4506bab4303aaaa6b1a0064136aabaff1114d21194eb00c03ab8d75301950",
+      "results_file_sha256": "6c245e56a62610a0ddf6dd11b4abc27dddd64df0dc738c97c6ff6bd250cd7daf",
+      "source_run_manifest_sha256": "2087d6624f794c5d10cdc53b9b0d90a938c0b571b3a35a876e3f774ba11271e1",
+      "packet_file_sha256": "141734bd26673a281bcfd067cff95171dd9b41e470a3635d2e511c6dc94e673f",
+      "packet_content_sha256": "cb9051d79ae8b9e47baa5011dc3c5b28575f152749cd9e03e7e87d0c8fa26d99",
+      "shortage_entities": 17,
+      "reorder_entities": 21,
+      "evidence_count": 119,
+      "ai_items": 0,
+      "byte_identical_to_stage5_preview": true
+    },
+    "base_ai.html": {
+      "scenario": "base",
+      "parameters": {
+        "demand_factor": 1,
+        "delay_days": 0
+      },
+      "html_sha256": "cc8ef400ceface899fb60a216b90bd4c529219a87ae3772b467476a3bbc6d857",
+      "results_file_sha256": "6c245e56a62610a0ddf6dd11b4abc27dddd64df0dc738c97c6ff6bd250cd7daf",
+      "source_run_manifest_sha256": "2087d6624f794c5d10cdc53b9b0d90a938c0b571b3a35a876e3f774ba11271e1",
+      "packet_file_sha256": "141734bd26673a281bcfd067cff95171dd9b41e470a3635d2e511c6dc94e673f",
+      "packet_content_sha256": "cb9051d79ae8b9e47baa5011dc3c5b28575f152749cd9e03e7e87d0c8fa26d99",
+      "shortage_entities": 17,
+      "reorder_entities": 21,
+      "evidence_count": 119,
+      "ai_items": 4,
+      "byte_identical_to_stage5_preview": true,
+      "response_file_sha256": "31649b0c605ae34fe0cec2484004aae5269b693bb51fa69be601965193bb0a6f",
+      "response_content_sha256": "460b72f288c41c8b84bd086d118cff13d1dae2860d5f16885e62ea490eb1b2a3",
+      "source_ai_validation_sha256": "ed7287d9d3ea5cd59785a97da3f0a620cb9f4a7e85ce77d0e0956f16e84e564d"
+    },
+    "combined.html": {
+      "scenario": "combined",
+      "parameters": {
+        "demand_factor": 1.25,
+        "delay_days": 7
+      },
+      "html_sha256": "ba0ddca2d05a9ff92585239675606e378fbda9c03d3c3099e6690d0a437ced00",
+      "results_file_sha256": "5e4611cb388f7c45d9f36676d41f30e58f07d61188e1b39483b3b0a14ba1df3d",
+      "source_run_manifest_sha256": "2ab1054d71676247de3e8c6472866e6150f24584fddb62a00c8aa97e0b26b4d2",
+      "packet_file_sha256": "75634d3225ef633497494b4bfa13dda2ffd92c229e2ed30bf966bc3651b1d1c0",
+      "packet_content_sha256": "bbd5ed639ec761267394148d4a33f067b106febbc42bf5742189db3c73fe8cee",
+      "shortage_entities": 69,
+      "reorder_entities": 74,
+      "evidence_count": 171,
+      "ai_items": 0,
+      "byte_identical_to_stage5_preview": true
+    }
+  },
+  "verification_scope": {
+    "source_run_files_and_actual_csv_verified": true,
+    "embedded_payload_matches_source_results": true,
+    "four_scenario_results_equal_prior_reference_bytes": true,
+    "ai_validation_and_v2_template_binding_verified": true,
+    "personal_review_records_included": false,
+    "source_run_bundles_distributed": false,
+    "browser_automation_in_this_stage": false,
+    "prior_chrome_acceptance": "reported_by_user_for_stage5_preview_pages",
+    "remote_ci_in_this_stage": false,
+    "note": "Checksums are integrity references, not signatures, identity checks, or proof of business execution."
+  }
+}

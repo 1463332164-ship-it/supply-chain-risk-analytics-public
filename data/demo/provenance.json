@@ -1,0 +1,8 @@
+{
+  "origin": "synthetic",
+  "seed": 20261018,
+  "as_of": "2026-10-17",
+  "generator": "scai.data.generate",
+  "purpose": "learning and portfolio; no company data",
+  "limitations": "Demand is unconstrained simulated demand, not observed sales; inventory snapshots and purchase orders are simulated independently, not a historical stock-flow ledger."
+}

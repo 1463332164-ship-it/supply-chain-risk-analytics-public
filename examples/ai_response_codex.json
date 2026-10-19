@@ -1,0 +1,10 @@
+{
+  "packet_sha256": "cb9051d79ae8b9e47baa5011dc3c5b28575f152749cd9e03e7e87d0c8fa26d99",
+  "limitations": "模拟数据；待人工审核。以下只提出待核查解释与建议，不证明根因、不代表已执行或已产生收益。",
+  "items": [
+    {"evidence_id":"INV-SKU001-WH1","observed":{"first_shortage_day":3,"peak_net_shortage_units":70.0,"reorder_suggestion_units":116},"hypothesis":"待核实：现货与到货时点可能不足以覆盖预测需求；尚不能确定是需求上升、库存记录差异还是到货延迟。","action":"先核对仓库可用量和未清订单，再确认最早可到货时间；若常规补货晚于预计缺口，评估调拨与催交的可行性。","owner_role":"计划与采购"},
+    {"evidence_id":"INV-SKU001-WH2","observed":{"first_shortage_day":2,"peak_net_shortage_units":102.0},"hypothesis":"待核实：预测显示近期净缺口，需要确认需求是否包含短期促销或一次性订单。","action":"对照近期实际订单检查预测适用性，同时核实在途到货；未完成核查前不直接按建议量下单。","owner_role":"计划与销售运营"},
+    {"evidence_id":"PO-001-1-4","observed":{"overdue_days":9,"open_units":128},"hypothesis":"待核实：采购订单已超承诺期但未记录全量收货，可能涉及实际延期或收货记录尚未更新。","action":"核对供应商发货凭据、物流签收与仓库收货记录，确认状态后更新预计到货时间及异常责任人。","owner_role":"采购与仓储"},
+    {"evidence_id":"EXCESS-SKU007-WH1","observed":{"coverage_days":65.4961},"hypothesis":"待核实：覆盖天数较长可能来自备货策略或需求下降，不能仅据覆盖阈值认定呆滞库存。","action":"核查促销计划、最小订购量、季节性与产品生命周期；确认无合理备货需求后再讨论后续订单调整。","owner_role":"计划与产品运营"}
+  ]
+}

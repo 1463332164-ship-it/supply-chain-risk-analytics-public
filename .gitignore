@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+examples/base/review_decisions.json
+data/private/
+runs/
+*.log

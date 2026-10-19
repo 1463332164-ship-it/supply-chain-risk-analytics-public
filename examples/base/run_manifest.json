@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "input_sha256": "d9f6fc2e0ad993d82a52f14e23ddb78aa9adfcc42d6a403425a2e5fc36149932",
+  "parameters": {
+    "demand_factor": 1,
+    "delay_days": 0
+  },
+  "data_validation": "passed",
+  "ai_execution": "not_called_by_run",
+  "output_sha256": {
+    "results.json": "6c245e56a62610a0ddf6dd11b4abc27dddd64df0dc738c97c6ff6bd250cd7daf",
+    "forecast_backtest.csv": "d4472b4ae9bc56f67c3d3d0306c28f7dcb02a7e90810b30d910274fcfd4e2e65",
+    "inventory_risks.csv": "f9c76f016a32e0242c7248b0492db2b82694ea7fff6cd458be53a5105cfb2944",
+    "exceptions.csv": "e6b91835e92e07accad6596742bd87e45bcebf2294f82642c792d14405e7e1ba",
+    "ai_packet.json": "141734bd26673a281bcfd067cff95171dd9b41e470a3635d2e511c6dc94e673f",
+    "dashboard.html": "2f290df0b629c4528664689521f5f524682ca012485adf6b6ecaefd60cc0b713"
+  },
+  "dashboard_refresh": {
+    "python": "3.12.10",
+    "refreshed_at_utc": "2026-10-18T05:29:59.175225+00:00",
+    "scope": "P1 shortage/reorder presentation; original business artifacts unchanged"
+  }
+}
