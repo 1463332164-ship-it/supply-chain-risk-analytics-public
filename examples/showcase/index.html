@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>供应链异常分析台 | 在线演示</title>
+  <style>
+    body {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 24px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.8;
+      color: #202938;
+      background: #f5f7fa;
+    }
+    h1 { line-height: 1.4; }
+    .card {
+      margin: 18px 0;
+      padding: 20px;
+      background: white;
+      border: 1px solid #dce2ea;
+      border-radius: 12px;
+    }
+    a { color: #0969da; }
+    .note { color: #596579; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>供应链异常分析台</h1>
+  <p>基于模拟库存、需求与订单数据的离线分析演示。</p>
+
+  <div class="card">
+    <h2>01 · 基准看板</h2>
+    <p>无 AI 草稿，119 条证据。</p>
+    <a href="base.html">打开基准看板 →</a>
+  </div>
+
+  <div class="card">
+    <h2>02 · AI 建议看板</h2>
+    <p>包含 4 条固定 AI 草稿，119 条证据。</p>
+    <a href="base_ai.html">打开 AI 建议看板 →</a>
+  </div>
+
+  <div class="card">
+    <h2>03 · 组合压力看板</h2>
+    <p>需求增加 25%，到货及采购交期延后 7 天，171 条证据。</p>
+    <a href="combined.html">打开组合压力看板 →</a>
+  </div>
+
+  <p class="note">
+    所有数据均为模拟数据。AI 草稿仅用于演示，
+    查看页面不构成正式审核或采购批准。
+  </p>
+</body>
+</html>
