@@ -15,7 +15,21 @@ h2{margin:0 0 16px}.cards{gap:16px;margin:20px 0}.cards .card{margin:0}.grid{mar
 @media(max-width:600px){main{margin:18px auto}header{padding:20px}.cards{gap:10px}.cards .card{padding:14px}.value{font-size:26px}.disclosure>summary{padding:16px;flex-wrap:wrap;gap:8px}.summary-main{flex-basis:calc(100% - 32px)}.disclosure>summary>.section-state{margin-left:22px}.evidence-list{padding:10px;max-height:70vh}.evidence-item{padding:12px}.evidence-fields{grid-template-columns:minmax(0,1fr);gap:4px}.entity-fields{grid-template-columns:minmax(0,1fr)}.disclosure-body{padding:4px 14px 14px}.barrow{grid-template-columns:90px minmax(0,1fr) 64px;gap:8px}}
 @media(prefers-reduced-motion:reduce){.disclosure>summary::before{transition:none}}
 </style>
-<main><header><div class="eyebrow">P1 / EVIDENCE-DRIVEN OPERATIONS</div><h1>供应链需求、库存与交付异常分析台</h1><div id="meta"></div></header>
+<style>
+.showcase-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.showcase-nav a{padding:7px 12px;border:1px solid #bdcbd7;border-radius:7px;background:white;color:#173b58;text-decoration:none}
+.showcase-nav a:hover{background:#e9f4f5;text-decoration:underline}
+.showcase-nav a:focus-visible{outline:3px solid #218b96;outline-offset:3px}
+.showcase-nav a[aria-current="page"]{background:#126f7a;border-color:#126f7a;color:white;font-weight:600}
+</style>
+<main>
+<nav class="showcase-nav" aria-label="展示导航">
+  <a href="index.html">← 返回展示首页</a>
+  <a href="base.html" aria-current="page">基准看板</a>
+  <a href="base_ai.html">AI 建议看板</a>
+  <a href="combined.html">组合压力看板</a>
+</nav>
+<header><div class="eyebrow">P1 / EVIDENCE-DRIVEN OPERATIONS</div><h1>供应链需求、库存与交付异常分析台</h1><div id="meta"></div></header>
 <div class="notice"><b>全部运营数据为模拟。</b>预测风险不等于已发生缺货，补货量是规则建议；未证明企业收益。AI内容为待人工审核草稿。</div>
 
 <div class="cards" id="cards"></div><div class="grid"><section><h2>预测基线 · 独立测试段</h2><div id="models"></div><p class="muted">验证期选模型，末段测试；每个起点仅使用之前历史。WAPE 为汇总绝对误差 / 汇总实际需求。</p></section><section><h2>采购交付 · 到期订单口径</h2><div id="delivery"></div><p class="muted">最近28日承诺到期的订单作为分母；已到期未收货也计入。不支持部分收货，未使用 OTIF 命名。</p></section></div>
